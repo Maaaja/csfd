@@ -1,0 +1,11 @@
+{% block content %}
+    <h2>Filmy</h2>
+    <ul>
+        {% for film in object_list %}
+            <li>{{ film.nazev }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+

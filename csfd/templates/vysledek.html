@@ -1,0 +1,24 @@
+<form form_action="/vyhledej/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Odeslat">
+</form>
+
+
+
+
+<h1>Filmy</h1>
+
+
+{% for film in filmy %}
+    <p>{{ film.nazev }}</p>
+{% endfor %}
+
+
+
+<h1>Herci</h1>
+
+
+{% for herec in herci %}
+    <p>{{ herec.jmeno }}</p>
+{% endfor %}
